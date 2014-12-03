@@ -1,17 +1,17 @@
 message "(If you used RailsInstaller on Windows then you should already have `user.name` and `user.email` configured.)"
 
 console <<-BASH
-git config --global user.name "Your Actual Name"
-git config --global user.email "Your Actual Email"
+git config --global user.name Gregory Guillet
+git config --global user.email guilletgreg@gmail.com
 BASH
 
 important "Use the same email address for heroku, git, github, and ssh."
 
 verify do
   console "git config --get user.name"
-  result "your name"
+  result Gregory Guillet
   console "git config --get user.email"
-  result "your email address"
+  result guilletgreg@gmail.com
 end
 
 tip "Colored output in Git" do
